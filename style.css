@@ -1,0 +1,560 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html {height: 100%;}
+body{
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+}
+header {
+	position: relative;
+	text-align: center;
+	background-color: rgb(37, 36, 36);
+	height: 19%;
+	font-size: 32px;
+	z-index: 100000;
+}
+div#menu {
+	display: none;
+}
+div#menu>i.fa {
+	font-size: 24px;
+	color: #ec681b;
+}
+p.gitHub {
+	margin-top: 10px !important;
+}
+a.gitHub {
+	font-size: 14px !important;
+	text-decoration: none;
+	color: orangered;
+}
+footer {
+	width: 100%;
+	background-color: rgb(37, 36, 36);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	box-sizing: border-box;
+}
+div.foot-info {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+}
+p.author,
+p.date {
+	margin: 50px auto 0 auto;
+	color:orangered;
+	font-family:  'Architects Daughter', cursive;
+	font-size: 24px;
+	font-weight: 100;
+}
+div.to-footer {
+	display: inline-block; 
+	position: absolute;
+	bottom: 5px;
+	margin: 5px 50% 10px 50%;
+}
+div.btn-close>i.close-fa{
+	font-size: 24px;
+	color:#ec681b;
+}
+div.btn-close {
+	display: flex;
+	justify-content: flex-end;
+}
+i.fa.fa-angle-double-down,
+i.fa.fa-angle-double-up{
+	font-size: 24px;
+	color:#ec681b;
+}
+footer>i.fa.fa-angle-double-down {
+	color:green;
+}
+div.up {
+	display: inline-block; 
+	position: absolute;
+	bottom: 5px;
+	margin: 5px 50%;
+}
+
+h1 {
+	margin: 0;
+}
+.title{
+	margin-left: 6px;
+	font-family: 'Ranchers', cursive;
+}
+main {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 81%;
+}
+div.tools {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	position: relative;
+	/* top:30%; */
+	margin-top: 30px;
+}
+
+aside,
+article.info-block {
+	width: 25%;
+	min-height: 100%;
+	background-color: rgb(37, 36, 36);
+	padding-left: 25px;
+	z-index: 15000;
+}
+div.parent {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-height: 100%;
+	background-color: rgb(37, 36, 36);
+	border: 1px solid #ec681b;
+	overflow: hidden;
+	/* box-sizing: border-box; */
+}
+.inform {
+	box-sizing: border-box;
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(37, 36, 36);
+	padding:5px 20px 20px 20px;
+	color: #fff;
+	overflow: auto;
+	font-family:  'Architects Daughter', cursive;
+	font-size: 18px;
+	font-weight: 100;
+}
+div.information {
+	display: none;
+	height: 100%;
+	background-color: rgb(37, 36, 36);
+	padding: 5px 20px 0 20px;
+	color: #fff;
+	overflow: auto;
+	font-family:  'Architects Daughter', cursive;
+	font-size: 18px;
+	font-weight: 100;
+}
+/* div.column {
+	height: 80px;
+	position: relative;
+} */
+
+section.game {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top:5%;	
+ }
+ td {
+ 	width: 115px;
+ 	height: 115px;
+ 	border-radius: 3px;
+ 	background-color: #fff;
+	text-align: center;
+ }
+div.X,
+ div.O {
+ 	position: relative;
+ 	width: 150px;
+ 	height: 60px;
+	border: 1px solid #000;
+	color: #fff;
+ 	text-align: center;
+ }
+ div.O>i,
+ div.X>i {
+ 	position: absolute;
+ 	top: 15%;
+	left:10%;
+ }
+.win {
+	font-size: 36px;
+	color: red;
+}
+.equally {
+	font-size: 24px;
+	color: silver;
+}
+i.fa {
+	font-size: 44px;
+	font-weight: 100;
+}
+
+i.fa-circle-o {
+	font-size: 36px;
+	font-weight: 900;
+}
+i.fa-volume-up {
+	color:#ec681b;
+}
+span.count-x,
+span.count-o {
+	font-family: 'Ranchers', cursive;
+	font-size: 18px;
+	float: right;
+	position: relative;
+	top: 20px;
+	right: 20px;
+}
+.select {
+	background-color: white;
+	border: 2px solid black 
+	!important;
+	border-radius: 3px;
+	color:  rgb(37, 36, 36) !important;
+}
+div.message {
+	display: none;
+	position: fixed;
+	top: 50%;
+	width: 100%;
+	font-size: 64px;
+	color: #ec681b;
+	text-align: center;
+
+}
+div.message>span>i.fa {
+	font-size: 80px;
+}
+div.num-games,
+p.offer {
+	font-family: 'Ranchers', cursive;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin: 8px;
+	color: #ec681b;
+}
+
+p.info-title,
+p.option {
+	font-family: 'Architects Daughter', cursive;
+ 	font-size: 26px;
+ 	font-weight: 500;
+ 	margin-left:20px;
+ 	color:#fff;
+ }
+ 
+ label.radio {
+ 	font-family: 'Architects Daughter', cursive;
+ 	font-size: 22px;
+ 	font-weight: 400;
+	color:#fff;
+	cursor: pointer;
+ }
+
+ div.info-add {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 22px;
+	font-weight: 400;
+	color:#fff;
+	cursor: pointer;
+ }
+
+ .adapt-level {
+	width: 48%;
+	position: absolute;
+	top: -100%;
+	background-color:  rgb(37, 36, 36);
+	margin: 0 26% 0 26%;
+	z-index: 1000;
+	animation-name: menu;
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+ }
+ .menu {
+	width: 48%;
+	height: 33%;
+	position: absolute;
+	top: -100%;
+	background-color: #fff;
+	margin: 0 26% 0 26%;
+	padding: 5px 0;
+	text-align: center;
+	z-index: 100;
+	animation-name: menu;
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+	box-sizing: border-box;
+}
+ @keyframes menu {
+	from {
+		top: -100%;
+	}
+	to {
+		top: 0%;
+	}
+}
+
+ .show-block {
+	 position: absolute;
+	 right: -100%;
+	 z-index: 10000;
+	 animation-name: animShowBlock;
+	 animation-duration: .5s;
+	 animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	 animation-fill-mode: forwards;
+ }
+ .close-block {
+	position: absolute;
+	right: 0%;
+	z-index: 10000;
+	animation-name: closeBlock;
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+ }
+ @keyframes closeBlock{
+	 from {
+		 right: 0%;
+	 }
+	 to{
+		 right: -100%;
+	 }
+ }
+ @keyframes animShowBlock{
+	 from{
+		 right: -100%;
+	 }
+	 to {
+		 right: 0%;
+	 }
+ }
+ .init-info-style {
+	 position: absolute;
+	 top: -100%;
+	 z-index: 20000;
+	 animation-name: showInfo;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+ } 
+ @keyframes showInfo {
+	 from {top: -100%;}
+	 to{top: 0%;}
+ }
+ .close-info{
+	 /* position: absolute;
+	 top: 0%; */
+	animation-name: closeInfo;
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+ }
+ @keyframes closeInfo{
+	 from { top: 0% }
+	 to {  top: -100% }
+ }
+ p#up {
+	 text-align: center;
+	position: relative;
+	top: 0%;
+	margin-top: 5px;
+ }
+ input[type="radio"] {
+	 display: none;
+ }
+ span.dot {
+	 position: relative;
+	 display: inline-block;
+	 width: 20px;
+	 height: 20px;
+	 background: rgb(7, 7, 7);
+	 border: 1px solid #696664;
+	 border-radius: 50%;
+ }
+  input:checked + span {
+	 background-color: black;
+	 border: 1px solid #ec681b;
+ }
+ .radio input:checked + span::before { 
+    content: '';
+    position: absolute;
+	left: 6px; 
+	top: 6px;
+    background: #ec681b;
+	width: 8px;
+	 height: 8px;
+    border-radius: 50%;
+   }
+  
+   div.coll {
+	   display: none;
+   }
+   div.screen-tool{
+	   position: absolute;
+	   top: -25px;
+	   right: 10px;
+   }
+   i.fa-compress,
+   i.fa-arrows-alt {
+	   font-size: 18px;
+	   color:#ec681b;
+   }
+   div.logo >.fa-eye{
+	   color:orangered;
+	   font-size: 144px;
+   }
+   div.logo {
+	   display: flex;
+	   justify-content: center;
+	   margin-top: 30px;
+	 
+   }
+   .font {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 22px;
+	font-weight: 200;
+	margin-top: 4px; 
+	margin-bottom: 10px;
+	transition: .5s;
+   }
+   p.font:hover {
+	background-color: #696664;
+   }
+   
+ .close {
+	animation-name: close;
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	animation-fill-mode: forwards;
+}
+@keyframes close {
+	from {
+		top: 0px;
+	}
+	to {
+		top: -100%;
+	}
+}
+ 
+ .animation {
+	 font-size: 8px;
+	 transform: rotateY(0deg);
+	 animation-name: rota;
+	 animation-delay: .5s;
+	 animation-duration: 1.5s;
+	 animation-timing-function: linear;
+ }
+ @keyframes rota {
+	50%{ transform: rotateY(180deg);
+	}
+	100%{ transform: rotateY(360deg);
+	}
+ }
+ @media screen and (max-width: 886px) {
+
+	div.to-footer {
+		bottom: -5px;
+	}
+ }
+
+ @media screen and (max-width: 800px) {
+	section.game {
+		top:10%;
+	}
+	td{
+		width: 90px;
+		height:90px
+	}
+	form.levels {
+		height: 33%;
+	}
+	aside,
+	article {
+		display:none;
+	}
+	div.sound {
+		display: none;
+	}
+	table#table {
+		margin-top: 15px;
+	}
+	div.screen-tool {
+		display:none;
+	}
+	div#menu {
+		display: block;
+	}
+	label.radio {
+		display: block;
+		margin: 0 0 0 35px;
+	}
+	div.options {
+		margin: 10px 0 0 0; 
+	} 
+	div.prt-blc {
+		height: 33%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		z-index: 10000;
+		position: absolute;
+		box-sizing: border-box;
+	}
+	
+	div.info-add {
+		margin: 10px 0 10px 30px;
+	}
+	div.parent {
+	 border-bottom: 2px solid grey;
+	}
+	main {
+		position: relative;
+		max-height: 100%;
+	}
+ }
+
+ @media screen and (max-width: 330px) {
+	section.game {
+		top:15%;
+	}
+	td{
+		width: 85px;
+		height:85px
+	}
+	form.levels {
+		height: 35%;
+	}
+	div.menu {
+		height: 35%;
+	}
+	div.prt-blc{
+		height: 35%;
+	}
+	p.font {
+		margin-top: 0;
+	}
+	div.info-add {
+		margin-top: 5px;
+	}
+	div.options {
+		margin-top: 0px;
+	}
+	h1.title{
+		font-size: 50px;
+	}
+	div.to-footer>i.fa{
+		position: relative;
+		bottom: -5px;
+	}
+	div.parent {
+		padding-top: 10px;
+	}
+	div.column {
+		height: 40px;
+	}	
+ }
