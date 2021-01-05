@@ -11,5 +11,4 @@ form.addEventListener('click', closeMobileMenu);
 
 function closeMobileMenu(e) {
 	if (e.target.tagName == 'I') closeInfo('.test', 'formRadio', 'close', 'adapt-level', 'test');
-	console.log('fdgdf');
 }
