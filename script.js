@@ -155,6 +155,7 @@ function handler(event) {
 
 function playerHand(event) {
 	let target = event.target;
+	console.log(game);
 	if (game == true || progress == 3) return;
 	if (target.tagName == 'DIV' &&
 		target.classList.contains('O')) {

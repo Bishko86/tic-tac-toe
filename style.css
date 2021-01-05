@@ -491,8 +491,8 @@ p.option {
 		display: block;
 	}
 	label.radio {
-		display: block;
-		margin: 0 0 0 35px;
+		display: inline-block;
+		margin: 5px 0 0 35px;
 	}
 	div.options {
 		margin: 10px 0 0 0; 
@@ -527,10 +527,11 @@ p.option {
 		height:85px
 	}
 	form.levels {
-		height: 35%;
+		height: 29%;
 	}
 	div.menu {
-		height: 35%;
+		height: 29%;
+		padding: 0;
 	}
 	div.prt-blc{
 		height: 35%;
@@ -539,7 +540,7 @@ p.option {
 		margin-top: 0;
 	}
 	div.info-add {
-		margin-top: 5px;
+		margin: 5px 0 0 30px;
 	}
 	div.options {
 		margin-top: 0px;
@@ -557,4 +558,19 @@ p.option {
 	div.column {
 		height: 40px;
 	}	
+	div.tools {
+		margin-top: 0;
+	}
+	p.font {
+		font-size: 22px;
+	}
+	div.phone-sound>i.fa {
+		font-size: 28px;
+	}
+	p#up {
+		margin:0;
+	}
+	div.prt-blc {
+		height: 29%;
+	}
  }
