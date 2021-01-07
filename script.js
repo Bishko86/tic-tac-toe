@@ -156,6 +156,7 @@ function handler(event) {
 function playerHand(event) {
 	let target = event.target;
 	console.log(game);
+	console.log(progress);
 	if (game == true || progress == 3) return;
 	if (target.tagName == 'DIV' &&
 		target.classList.contains('O')) {
@@ -188,7 +189,7 @@ function checkLines(field) {
 				opponent[row] = cell;
 				XfullField++;
 				if (XfullField == 3) {
-					game = false;
+					// game = false;
 					progress = 3;
 					gameOver(keys, player.countFirst, 'https://pic.pikbest.com/00/62/92/40J888piCITh.mp3')
 					break label;
@@ -197,7 +198,7 @@ function checkLines(field) {
 			if (table.rows[row].cells[cell].innerHTML == player.second) {
 				OfullField++;
 				if (OfullField == 3) {
-					game = false;
+					// game = false;
 					progress = 3;
 					gameOver(keys, player.countSecond, 'https://pic.pikbest.com/00/62/92/40J888piCITh.mp3')
 					break label;
@@ -206,6 +207,8 @@ function checkLines(field) {
 		}
 	}
 	if (freeIcon().length == 0 && progress < 3) {
+		// game = false;
+		progress = 3;
 		gameOver(false, 'equally', 'sound/e0bdf44775a0d80.mp3')
 	}
 }
@@ -372,6 +375,7 @@ function newGame() {
 	player.second = '<i class="fa fa-circle-o" aria-hidden="true"></i>';
 	player.countFirst = 'count-x';
 	player.countSecond = 'count-o';
+	game = false;
 	progress = 0;
 	opponent = {};
 	document.querySelector('.X').classList.add('select');
